@@ -251,7 +251,7 @@ public class ProductService
 				logInfo( "Looked up product as " + product );
 				if( product == null )
 				{
-					throw new Error( HttpURLConnection.HTTP_NOT_FOUND, "Product not found" ).asException();
+					throw new Error( HttpURLConnection.HTTP_NOT_FOUND, "Product not found 1.1.4" ).asException();
 				}
 				int availability = product.getAvailability();
 				if( inventory.getQuantity() > availability )
